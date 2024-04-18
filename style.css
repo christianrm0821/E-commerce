@@ -40,8 +40,9 @@ h4 {
 }
 
 h6 {
-    font-size: 12px;
+    font-size: 25px;
     font-weight: 700;
+    color:#ffffff
 }
 
 p {
@@ -117,9 +118,99 @@ body{
 
 #mainPageCenter button{
     color: red;
-    background-color: #000000;
-    font-weight: 600;
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 5px;
+    font-weight: 800;
     font-size: 15px;
+    border-radius: 5px;
+}
+#mainPageCenter button:hover{
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+#product1 {
+    text-align: center;
+}
+#product1 .product-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+#product1 .product{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 15px;
+    border: 10px solid #ffd7d7;
+    border-radius: 35px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.08);
+    margin: 20px 0;
+    transition: 0.2s ease;
+}
+
+#product1 .product:hover{
+    box-shadow: 10px 10px 10px rgb(255, 226, 226);
+
+}
+
+#product1 .product img{
+    width: 200px;
+    height: 225px;
+
+    border-radius: 20px;
+}
+
+#product1 .product .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #dfffe6;
+    font-weight: 500;
+    color: green;
+}
+
+#Discount-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("Pictures/Looking-up-at-the-earth-wallpaper-background-Stock-Photo.jpg");
+    width:100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 15px rgba(102, 0, 0, 0.25);
+
+}
+
+#Discount-banner h1{
+    color:#ffffff;
+    font-size: 30;
+    padding: 20px;
+}
+
+button.basic-button{
+    color: #ff0000;
+    font-weight: 800;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+#Discount-banner span{
+    color:#fff700;
+}
+#Discount-banner button:hover{
+    background-color: #ff0000;
+    color: #ffffff;
 }
 
 #product1{
