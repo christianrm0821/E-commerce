@@ -38,6 +38,10 @@ h4 {
     background-color: #f4f2f0;
 
 }
+h5 {
+    font: 20px;
+    color: black;
+}
 
 h6 {
     font-size: 25px;
@@ -57,6 +61,10 @@ p {
 
 .section-p1{
     padding: 40px 80px;
+}
+
+strong{
+    font-weight: bold;
 }
 
 .section-m1{
@@ -144,7 +152,7 @@ body{
     width: 23%;
     min-width: 250px;
     padding: 10px 15px;
-    border: 10px solid #ffd7d7;
+    border: 5px solid #ff9595;
     border-radius: 35px;
     cursor: pointer;
     box-shadow: 10px 10px 10px rgba(0,0,0,.08);
@@ -153,7 +161,7 @@ body{
 }
 
 #product1 .product:hover{
-    box-shadow: 10px 10px 10px rgb(255, 226, 226);
+    box-shadow: 10px 10px 10px rgba(255, 73, 73, 0.5);
 
 }
 
@@ -180,7 +188,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("Pictures/Looking-up-at-the-earth-wallpaper-background-Stock-Photo.jpg");
+    background-image: url("Pictures/banner-background-image.png");
     width:100%;
     height: 40vh;
     background-size: cover;
@@ -206,13 +214,137 @@ button.basic-button{
 }
 
 #Discount-banner span{
-    color:#fff700;
+    color:#ff0000;
 }
+
+
 #Discount-banner button:hover{
     background-color: #ff0000;
     color: #ffffff;
 }
 
-#product1{
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url("Pictures/banner-background-image.png");
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 15px rgba(102, 0, 0, 0.25);
+
+}
+
+
+#newsletter button{
+    height: 3.125rem;
+    font-size: 14px;
+    outline: none;
+    width:40%;
+    background-color: rgb(255, 255, 255);
+    color:rgb(255, 0, 0);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#newsletter button:hover{
+    background-color: #ff0000;
+    color: #ffffff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: .5px solid transparent;
+    border-radius:  4px;
+    outline: none;
+    background-color: #c9c1c1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter .email-form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter h2{
+    color:red;
+    font-size: 25;
+}
+.col h4{
+    color: black;
+    background-color: transparent;
+}
+
+.payment h4{
+    color: black;
+    background-color: transparent;
+}
+
+.payment img{
+    padding-top: 0%;
+}
+
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer .col{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size:20px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 14px;
+    padding: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 14px;
+    padding: 0 0 8px 0;
+    text-decoration: none;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: red;
+}
+footer .follow,
+footer a{
+    color:black;
+}
+
+footer .copyright{
+    width:100%;
     text-align: center;
+
+}
+
+@media (max-width:799px) {
+    #navigationBar {
+        display: flex;
+        flex-direction: column ;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;  
+    }    
 }
