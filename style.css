@@ -24,12 +24,12 @@ h2 {
     margin: 15px 0 20px 0;
     font-weight: bolder;
     line-height: 25px;
+    -webkit-text-stroke: 1px black;
    
 }
 h3{
     font-size: 15px;
     color: #01a51f;
-
 }
 
 h4 {
@@ -63,10 +63,6 @@ p {
     padding: 40px 80px;
 }
 
-strong{
-    font-weight: bold;
-}
-
 .section-m1{
     margin: 40px 0;
 }
@@ -91,6 +87,11 @@ body{
     left:0;
 }
 
+#header img{
+    border-radius: 35px;
+}
+
+
 #navigationBar{
     display: flex;
     align-items: center;
@@ -110,6 +111,15 @@ body{
 #navigationBar li a.currentPage{
     color: rgb(255, 255, 255);
 }
+
+#mobile-screen{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
 
 #mainPageCenter{
     background-image: url("Pictures/Supreme-Spring-2016-Big.jpg");
@@ -152,8 +162,9 @@ body{
     width: 23%;
     min-width: 250px;
     padding: 10px 15px;
-    border: 5px solid #ff9595;
+    border: 7px solid #ff9595;
     border-radius: 35px;
+    border-style: groove;
     cursor: pointer;
     box-shadow: 10px 10px 10px rgba(0,0,0,.08);
     margin: 20px 0;
@@ -168,7 +179,6 @@ body{
 #product1 .product img{
     width: 200px;
     height: 225px;
-
     border-radius: 20px;
 }
 
@@ -190,10 +200,11 @@ body{
     text-align: center;
     background-image: url("Pictures/banner-background-image.png");
     width:100%;
-    height: 40vh;
+    height: 30vh;
     background-size: cover;
     background-position: center;
     box-shadow: 0 5px 15px rgba(102, 0, 0, 0.25);
+    
 
 }
 
@@ -276,6 +287,7 @@ button.basic-button{
 #newsletter h2{
     color:red;
     font-size: 25;
+    -webkit-text-stroke: 0px black;
 }
 .col h4{
     color: black;
@@ -328,6 +340,7 @@ footer .follow i:hover,
 footer a:hover{
     color: red;
 }
+
 footer .follow,
 footer a{
     color:black;
@@ -339,12 +352,92 @@ footer .copyright{
 
 }
 
-@media (max-width:799px) {
-    #navigationBar {
+@media (max-width:830px) {
+    #navigationBar{
         display: flex;
-        flex-direction: column ;
+        flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        position: fixed;  
+        position: fixed;
+        top: 0;
+        right: -250px;
+        height: 100vh;
+        width: 250px;
+        background-color: rgb(180, 180, 180);
+        box-shadow: 0 40px 60px rgba(0,0,0,.08);
+        padding: 90px 0 0 15px;
+        transition: .4s;
     }    
+
+    #navigationBar li{
+        margin-bottom: 25px;
+        
+    }
+    #navigationBar.active{
+        right: 0px;
+    }
+
+    #mobile-screen{
+        display: flex;
+        align-items: center;
+    }
+    #mobile-screen i{
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        padding-left: 20px;
+
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top:30px;
+        left:30px;
+        color: black;
+        font-size: 20px;
+    }
+
+    #mobile-screen #bar{
+        padding-right: 20px;
+    }
+    #my-cart{
+        display: none;
+    }
+
+    #mainPageCenter{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30;
+       
+    }
+    #newsletter .email-form{
+        width:70%;
+    }
+
+    h1{
+        font-size: 40px;
+    }   
+    #mainPageCenter h2{
+        font-size: 16px;
+    }     
+}
+
+@media(max-width: 480px){
+    #header{
+        padding: 10px 30px;
+    }
+    #mainPageCenter{
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #mainPageCenter h1{
+        font-size: 30;
+        color:rgb(0, 0, 0);
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+    }
+    h2{
+        color:yellow
+    }
+    #Discount-banner h1{
+        font-size:17px;
+    }
 }
