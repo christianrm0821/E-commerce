@@ -440,4 +440,38 @@ footer .copyright{
     #Discount-banner h1{
         font-size:17px;
     }
+    #newsletter .email-form{
+        width:100%;
+    }
+    #newsletter{
+        padding: 40px 20px;
+    }
+     footer .copyright{
+        text-align: start;
+     }
+
+}
+
+#pageNumber{
+    text-align: center;
+}
+#pageNumber a{
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#product-details .individual-image{
+    width:40%;
+    margin-right: 40px;
+    border: #ff9595;
+}
+
+product-details h4{
+    size: 70px;
 }
