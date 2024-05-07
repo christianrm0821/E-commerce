@@ -1,4 +1,11 @@
+/* This is a CSS comment */
+
+/* You can write your CSS code here */
+
+/* Example: Styling the body element */
+
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 * {
     margin: 0;
@@ -25,8 +32,8 @@ h2 {
     font-weight: bolder;
     line-height: 25px;
     -webkit-text-stroke: 1px black;
-   
 }
+
 h3{
     font-size: 15px;
     color: #01a51f;
@@ -36,17 +43,17 @@ h4 {
     font-size: 20px;
     color: #858585;
     background-color: #f4f2f0;
-
 }
+
 h5 {
-    font: 20px;
+    font-size: 20px;
     color: black;
 }
 
 h6 {
     font-size: 25px;
     font-weight: 700;
-    color:#ffffff
+    color:#ffffff;
 }
 
 p {
@@ -83,14 +90,13 @@ body{
     box-shadow: 0 5px 15px rgba(0,0,0,.75);
     z-index: 999;
     position: sticky;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
 
 #header img{
     border-radius: 35px;
 }
-
 
 #navigationBar{
     display: flex;
@@ -100,7 +106,7 @@ body{
 
 #navigationBar li{
     list-style: none;
-    padding:  0 20px;
+    padding: 0 20px;
 }
 
 #navigationBar li a{
@@ -116,10 +122,10 @@ body{
     display: none;
     align-items: center;
 }
+
 #close{
     display: none;
 }
-
 
 #mainPageCenter{
     background-image: url("Pictures/Supreme-Spring-2016-Big.jpg");
@@ -143,14 +149,16 @@ body{
     font-size: 15px;
     border-radius: 5px;
 }
+
 #mainPageCenter button:hover{
     background-color: #ff0000;
     color: #ffffff;
 }
 
-#product1 {
+#product1{
     text-align: center;
 }
+
 #product1 .product-container{
     display: flex;
     justify-content: space-between;
@@ -173,7 +181,6 @@ body{
 
 #product1 .product:hover{
     box-shadow: 10px 10px 10px rgba(255, 73, 73, 0.5);
-
 }
 
 #product1 .product img{
@@ -200,12 +207,10 @@ body{
     text-align: center;
     background-image: url("Pictures/banner-background-image.png");
     width:100%;
-    height: 30vh;
+    height:30vh;
     background-size: cover;
     background-position: center;
     box-shadow: 0 5px 15px rgba(102, 0, 0, 0.25);
-    
-
 }
 
 #Discount-banner h1{
@@ -244,9 +249,7 @@ button.basic-button{
     background-size: cover;
     background-position: center;
     box-shadow: 0 5px 15px rgba(102, 0, 0, 0.25);
-
 }
-
 
 #newsletter button{
     height: 3.125rem;
@@ -325,6 +328,7 @@ footer h4{
     font-size:20px;
     padding-bottom: 20px;
 }
+
 footer p{
     font-size: 14px;
     padding: 0 0 8px 0;
@@ -349,10 +353,187 @@ footer a{
 footer .copyright{
     width:100%;
     text-align: center;
-
 }
 
-@media (max-width:830px) {
+#pageNumber{
+    text-align: center;
+}
+
+#pageNumber a{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#product-details .individual-image{
+    width:40%;
+    margin-right: 40px;
+    border: #ff9595;
+}
+
+#product-details h4{
+    font-size: 25px;
+    color: black;
+    background-color: transparent;
+}
+
+#product-details{
+    display: flex;
+    margin-top: 30px;
+}
+
+#product-details h5{
+    padding-top: 10px;
+}
+
+#product-details .product-description{
+    width:50%;
+    padding-top: 30px;
+}
+
+#product-details .product-description h2{
+    color:#ff0000;
+}
+
+#product-details .product-description select{
+    display: block;
+    padding:  5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: #ff0000;
+}
+
+#product-details .product-description input{
+    width:40px;
+    height: 40px;
+    padding-left:10px;
+    font-size: 15px;
+    margin-right: 10px;
+    border-color: #ff0000;
+    border-radius: 3px;
+}
+
+#product-details .product-description button{
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+#product-details .product-description button:hover{
+    background-color: rgb(255, 0, 0);
+    color:white;
+}
+
+#product-details .product-description span{
+    line-height: 25px;
+}
+
+#contact-info h5{
+    font-size: 30px;
+    padding: 20px 10px;
+}
+ 
+#contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-info .contact-details{
+    width:40%;
+}
+
+#contact-info .contact-details span{
+    line-height: 25px;
+}
+
+#contact-info .contact-details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0px;
+}
+
+#contact-info .contact-details li i{
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+#contact-info .contact-details li p{
+    margin: 0;
+    font-size: 15px;
+    
+}
+
+#contact-info .map{
+    width:55%;
+    height:400px;   
+}
+
+#contact-info .map iframe{
+    width:100%;
+    height:100%;   
+}
+
+#form-details form{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details h5{
+    font-size: 20px;
+}
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 15px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border:1px solid rgb(246, 212, 212);
+}
+
+#form-details form button{
+    color:white;
+    background-color: rgb(0, 0, 0);
+}
+
+#form-details form button:hover{
+    color:white;
+    background-color: rgb(255, 0, 0);
+}
+
+#form-details{
+    display: flex;
+    padding-left: 5%;
+    border:1px solid rgb(246, 212, 212);
+    margin: 30px;
+    padding: 5%;
+}
+
+
+
+#pageNumber a.currentNumber{
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:830px){
     #navigationBar{
         display: flex;
         flex-direction: column;
@@ -370,9 +551,9 @@ footer .copyright{
     }    
 
     #navigationBar li{
-        margin-bottom: 25px;
-        
+        margin-bottom: 25px;    
     }
+
     #navigationBar.active{
         right: 0px;
     }
@@ -381,6 +562,7 @@ footer .copyright{
         display: flex;
         align-items: center;
     }
+
     #mobile-screen i{
         color: rgb(0, 0, 0);
         font-size: 15px;
@@ -399,6 +581,7 @@ footer .copyright{
     #mobile-screen #bar{
         padding-right: 20px;
     }
+
     #my-cart{
         display: none;
     }
@@ -406,16 +589,17 @@ footer .copyright{
     #mainPageCenter{
         height: 70vh;
         padding: 0 80px;
-        background-position: top 30% right 30;
-       
+        background-position: top 30% right 30;   
     }
+
     #newsletter .email-form{
         width:70%;
     }
 
     h1{
         font-size: 40px;
-    }   
+    }  
+
     #mainPageCenter h2{
         font-size: 16px;
     }     
@@ -425,53 +609,66 @@ footer .copyright{
     #header{
         padding: 10px 30px;
     }
+
     #mainPageCenter{
         padding: 0 20px;
         background-position: 55%;
     }
+
     #mainPageCenter h1{
         font-size: 30;
         color:rgb(0, 0, 0);
         -webkit-text-stroke: 1px rgb(255, 255, 255);
     }
+
     h2{
-        color:yellow
+        color:yellow;
     }
+
     #Discount-banner h1{
         font-size:17px;
     }
+
     #newsletter .email-form{
         width:100%;
     }
+
     #newsletter{
         padding: 40px 20px;
     }
-     footer .copyright{
+
+    footer .copyright{
         text-align: start;
-     }
+    }
 
-}
+    /* Individual product*/
+    #product-details{
+        display: center;
+        flex-direction: column;    
+    }
 
-#pageNumber{
-    text-align: center;
-}
-#pageNumber a{
-    background-color: #ff0000;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 15px;
-}
+    #product-details .individual-image{
+        width: 100%;        
+    }
 
-#product-details .individual-image{
-    width:40%;
-    margin-right: 40px;
-    border: #ff9595;
-}
+    #product-details .product-description{
+        width: 100%;
+       
+    }
 
-product-details h4{
-    size: 70px;
+    /* Contact Page */
+    #contact-info{
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 10px;
+        padding: 0px 0px;
+    }
+
+    #contact-info .contact-details{
+        width:100%;
+    }
+
+    #contact-info .map{
+        width:80%; 
+    }
 }
