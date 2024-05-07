@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <section id="header">
+
+        <a href="#" aria-label="hello"><img src="Pictures/logo2.png" width= "175" height="130" class="logo" alt=""></a>
+        <div>
+            <ul id ="navigationBar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="currentPage" href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="my-cart"><a href="cart.html "><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile-screen">
+            <a href="cart.html "><i class="fa fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+            
+
+        </div>
+    </section>
+
+    <section id="product-details" class="section-p1">
+        <div class="individual-image">
+            <img src = "Pictures/spider-hoodie.jpg"  width="100%" alt="">
+        </div>
+        <div class ="product-description">
+            <h6>Home / Sweater</h6>
+            <h4>Women's Pink Spider Sweater</h4>
+            <h2>$150.00</h2>
+            <label for="size-select">Select Size:</label>
+            <select id="size-select" name="size">
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+            <label for="quantity-input">Quantity:</label>
+            <input type="number" id="quantity-input" name="quantity" value="1" min="1" max="9" placeholder="Enter quantity">
+            <button class = "basic-button">Add to Cart</button>
+            <h5>Product Details</h5>
+            <span>This black hoodie is crafted from a soft and comfortable cotton blend fabric, providing warmth and coziness. The hoodie features a classic pullover design with long sleeves and a spacious kangaroo pocket at the front. Its relaxed fit ensures comfort and ease of movement.</span>
+        </div>
+
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext-letter">
+            <h6>Sign Up For Our Newsletters</h6>
+            <h2>Be the first to know when new products arrive</h2>
+        </div>
+        <div class="email-form">
+            <input type="text" placeholder="Your email address">
+            <button class="basic-button">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 1234 Gading Road, Hayward CA.</p>
+            <p><strong>Phone:</strong> +1(510)123-4567</p>
+            <p><strong>Hours:</strong> 8:00am - 5:00pm, Mon-Fri</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class = "icon">
+                    
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "col">
+            <h4>About</h4>
+            <a href="About-us.html">About us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="terms-conditions.html">Terms and Conditions</a>
+        </div>
+        <div class = "col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">My Cart</a>
+        </div>
+        <div class = "payment">
+            <h4>Pay</h4>
+            <p>Secured Payment Gateways</p>
+            <img src="Pictures/payment-logo.png"  width=" 140" height="90" alt="">
+        </div>
+        <div class="copyright">
+            <p>© 2024, HTML CSS E-Commerce Christian Tapia all rights reserved</p>
+        </div>
+    </footer>
+    <script src ="script.js"></script>
+</body>
+</html>
